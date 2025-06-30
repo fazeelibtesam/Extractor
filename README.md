@@ -24,13 +24,13 @@ Grayscale image where pixel values are scaled based on the matrix.
 * Python 3.7+
 * `scipy`
 * `numpy`
-* `matplotlib` or `Pillow` (depending on image saving method)
+* `Pillow` 
 
 ## 📥 Installation
 
 ```bash
-git clone https://github.com/your-username/mat-to-jpg-converter.git
-cd mat-to-jpg-converter
+git clone https://github.com/fazeelibtesam/Extractor.git
+cd Extractor
 pip install -r requirements.txt
 ```
 
@@ -38,21 +38,6 @@ pip install -r requirements.txt
 
 ```bash
 python mat_to_jpg.py --input_dir ./mat_files --output_dir ./jpg_output
-```
-
-### Arguments
-
-| Argument       | Description                                 | Required |
-| -------------- | ------------------------------------------- | -------- |
-| `--input_dir`  | Directory containing `.mat` files           | ✅        |
-| `--output_dir` | Directory where `.jpg` files will be saved  | ✅        |
-| `--key`        | (Optional) Variable key inside `.mat` file  | ❌        |
-| `--normalize`  | (Optional) Normalize data before converting | ❌        |
-
-## 🧪 Sample Command
-
-```bash
-python mat_to_jpg.py --input_dir ./data --output_dir ./images --key data --normalize
 ```
 
 ## 🗂️ Project Structure
@@ -83,9 +68,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Feel free to fork, star ⭐, and follow for updates!
 
-```
-
----
-
-Let me know if you'd like a version that uses a GUI instead of CLI, or if you want to support RGB images or 3D data.
 ```
