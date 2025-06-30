@@ -45,10 +45,10 @@ python mat_to_jpg.py --input_dir ./mat_files --output_dir ./jpg_output
 ```
 mat-to-jpg-converter/
 │
-├── mat_to_jpg.py           # Main script
-├── requirements.txt        # Dependencies
+├── examples/               # Sample .mat files and output images
 ├── README.md               # Documentation
-└── examples/               # Sample .mat files and output images
+├── mat_to_jpg.py           # Main script
+└── requirements.txt        # Dependencies
 ```
 
 ## 🛠️ Notes
