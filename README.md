@@ -1,2 +1,91 @@
 # Extractor
-Python script to convert .mat file to jpg 
+
+---
+A lightweight and easy-to-use Python tool to convert `.mat` (MATLAB) files into `.jpg` image files. Useful for data preprocessing, machine learning pipelines, or visualization purposes.
+
+## 📌 Features
+
+- Converts 2D `.mat` arrays into `.jpg` images
+- Batch processing support
+- Custom output directory
+- Normalizes pixel values (0–255)
+- CLI-based usage for ease of automation
+
+## 📂 Example
+
+**Input `.mat` file:**
+
+**Output `.jpg` image:**
+
+Grayscale image where pixel values are scaled based on the matrix.
+
+## 🔧 Requirements
+
+* Python 3.7+
+* `scipy`
+* `numpy`
+* `matplotlib` or `Pillow` (depending on image saving method)
+
+## 📥 Installation
+
+```bash
+git clone https://github.com/your-username/mat-to-jpg-converter.git
+cd mat-to-jpg-converter
+pip install -r requirements.txt
+```
+
+## 🚀 Usage
+
+```bash
+python mat_to_jpg.py --input_dir ./mat_files --output_dir ./jpg_output
+```
+
+### Arguments
+
+| Argument       | Description                                 | Required |
+| -------------- | ------------------------------------------- | -------- |
+| `--input_dir`  | Directory containing `.mat` files           | ✅        |
+| `--output_dir` | Directory where `.jpg` files will be saved  | ✅        |
+| `--key`        | (Optional) Variable key inside `.mat` file  | ❌        |
+| `--normalize`  | (Optional) Normalize data before converting | ❌        |
+
+## 🧪 Sample Command
+
+```bash
+python mat_to_jpg.py --input_dir ./data --output_dir ./images --key data --normalize
+```
+
+## 🗂️ Project Structure
+
+```
+mat-to-jpg-converter/
+│
+├── mat_to_jpg.py           # Main script
+├── requirements.txt        # Dependencies
+├── README.md               # Documentation
+└── examples/               # Sample .mat files and output images
+```
+
+## 🛠️ Notes
+
+* Make sure the `.mat` files contain 2D arrays for image conversion.
+* Use `--key` if the variable name inside the `.mat` file is not obvious.
+
+## 🤝 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Feel free to fork, star ⭐, and follow for updates!
+
+```
+
+---
+
+Let me know if you'd like a version that uses a GUI instead of CLI, or if you want to support RGB images or 3D data.
+```
